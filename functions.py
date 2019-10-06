@@ -19,7 +19,7 @@ def converge(strip, color):
     print("Converged")
 
 def fade(strip, color):
-    for i in range(12):
+    for i in range(1, 12):
         new_color = (color[0]/i, color[1]/i, color[2]/i)
         strip.fill(new_color)
     print("Faded")

@@ -37,10 +37,11 @@ def fade(strip, color):
 
 def shoot(strip, color):
     for i in range(0, 144, 2):
-        if i >= 6:
+        if i >= 8:
             strip[i] = color
             strip[i - 2] = tuple(map(lambda x: x//2, color))
             strip[i - 4] = tuple(map(lambda x: x//4, color))
+            strip[i - 6] = (0, 0, 0)
             strip.show()
 
 print("Shoot")

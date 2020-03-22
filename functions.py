@@ -45,7 +45,8 @@ def shoot(strip, color):
             strip.show()
 
 print("Shoot")
-shoot(strip, (255, 0, 0))
+for i in range(200):
+    shoot(strip, (255, 255, 0))
 # set_all(strip, (144, 144, 144))
 # time.sleep(2)
 #

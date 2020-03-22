@@ -39,8 +39,8 @@ def shoot(strip, color):
     for i in range(0, 144, 2):
         if i >= 6:
             strip[i] = color
-            strip[i - 2] = map(lambda x: x//2, color)
-            strip[i - 4] = map(lambda x: x // 4, color)
+            strip[i - 2] = tuple(map(lambda x: x//2, color))
+            strip[i - 4] = tuple(map(lambda x: x//4, color))
             strip.show()
 
 print("Shoot")

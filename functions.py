@@ -1,6 +1,5 @@
 import board
 import neopixel
-import time
 
 strip = neopixel.NeoPixel(board.D18, 144, brightness=0.2, auto_write=False)
 # Sets all the leds to the same color
@@ -44,9 +43,9 @@ def shoot(strip, color):
             strip[i - 6] = (0, 0, 0)
             strip.show()
 
-print("Shoot")
-for i in range(200):
-    shoot(strip, (255, 255, 0))
+# print("Shoot")
+# for i in range(200):
+#     shoot(strip, (255, 255, 0))
 # set_all(strip, (144, 144, 144))
 # time.sleep(2)
 #

@@ -51,7 +51,7 @@ def use_refresh_token(refresh_token):
 
 if __name__ == "__main__":
     # print(authorize())
-    access_token, refresh_token = part_2()
-    print(access_token)
-    print(refresh_token)
-    # use_refresh_token(refresh_token)
+    # access_token, refresh_token = part_2()
+    # print(access_token)
+    # print(refresh_token)
+    print(use_refresh_token(os.getenv("REFRESH_TOKEN")))

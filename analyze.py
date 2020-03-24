@@ -83,7 +83,7 @@ def pulse_to_bars(bars):
 
 def piano_to_notes(segments):
     strip = neopixel.NeoPixel(board.D18, 144, brightness=0.3, auto_write=True)
-    for segment in segments():
+    for segment in segments:
         func.piano(strip, (34, 23, 98), segment["pitches"].index(max(segment["pitches"])))
 
 if __name__ == "__main__":

@@ -68,7 +68,7 @@ def pulse_to_bars(bars):
     time.sleep(bars[0]["start"] + .2)
     for bar in bars:
         print("BOOP")
-        func.fade(strip, (255, 0, 255))
+        func.fade(strip, (255, 255, 255))
         time.sleep(bar["duration"])
     return
 

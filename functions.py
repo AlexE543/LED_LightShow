@@ -32,7 +32,6 @@ def fade(strip, color):
     new_color = ((0, 0, 0))
     strip.fill(new_color)
     strip.show()
-    print("Faded")
 
 def shoot(strip, color):
     for i in range(0, 144, 2):

@@ -65,7 +65,7 @@ def start_song(bars):
 def pulse_to_bars(bars):
     strip = neopixel.NeoPixel(board.D18, 144, brightness=0.3, auto_write=False)
     print("Starting Song")
-    time.sleep(bars[0]["start"] + .2)
+    time.sleep(bars[0]["start"])
     for bar in bars:
         print("BOOP")
         func.fade(strip, (255, 255, 255))

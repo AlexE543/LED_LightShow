@@ -43,18 +43,44 @@ def shoot(strip, color):
 
 
 def piano(strip, color, note):
-    if note == 1: strip.fill((0, 0, 0)); strip[0:12] = color;
-    if note == 2: strip.fill((0, 0, 0)); strip[12:24] = color;
-    if note == 3: strip.fill((0, 0, 0)); strip[24:36] = color;
-    if note == 4: strip.fill((0, 0, 0)); strip[36:48] = color;
-    if note == 5: strip.fill((0, 0, 0)); strip[48:60] = color;
-    if note == 6: strip.fill((0, 0, 0)); strip[60:72] = color;
-    if note == 7: strip.fill((0, 0, 0)); strip[72:84] = color;
-    if note == 8: strip.fill((0, 0, 0)); strip[84:96] = color;
-    if note == 9: strip.fill((0, 0, 0)); strip[96:108] = color;
-    if note == 10: strip.fill((0, 0, 0)); strip[108:120] = color;
-    if note == 11: strip.fill((0, 0, 0)); strip[120:132] = color;
-    if note == 12: strip.fill((0, 0, 0)); strip[132:144] = color;
+    colors = [color for i in range(12)]
+    strip.fill((0, 0, 0))
+    if note == 1:
+        strip.fill((0, 0, 0))
+        strip[0:12] = colors
+    if note == 2:
+        strip.fill((0, 0, 0))
+        strip[12:24] = colors
+    if note == 3:
+        strip.fill((0, 0, 0))
+        strip[24:36] = colors
+    if note == 4:
+        strip.fill((0, 0, 0))
+        strip[36:48] = colors
+    if note == 5:
+        strip.fill((0, 0, 0))
+        strip[48:60] = colors
+    if note == 6:
+        strip.fill((0, 0, 0))
+        strip[60:72] = colors
+    if note == 7:
+        strip.fill((0, 0, 0))
+        strip[72:84] = colors
+    if note == 8:
+        strip.fill((0, 0, 0))
+        strip[84:96] = colors
+    if note == 9:
+        strip.fill((0, 0, 0))
+        strip[96:108] = colors
+    if note == 10:
+        strip.fill((0, 0, 0))
+        strip[108:120] = colors
+    if note == 11:
+        strip.fill((0, 0, 0))
+        strip[120:132] = colors
+    if note == 12:
+        strip.fill((0, 0, 0))
+        strip[132:144] = colors
 
 # print("Shoot")
 # for i in range(200):

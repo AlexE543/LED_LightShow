@@ -87,8 +87,7 @@ def piano_to_notes(segments):
         if abs(segment["loudness_max"]) - 4 > 0:
             func.piano(strip, (34, 23, 98), segment["pitches"].index(max(segment["pitches"])))
             print(segment["pitches"].index(max(segment["pitches"])))
-        if segment["duration"] > .15:
-            time.sleep(segment["duration"])
+        time.sleep(segment["duration"] - .03)
 
 if __name__ == "__main__":
     current_id = get_current_track_id()

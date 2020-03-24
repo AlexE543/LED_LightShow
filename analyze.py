@@ -69,9 +69,15 @@ def pulse_to_bars(bars):
         time.sleep(bars[0]["start"] - .14)
     for bar in bars:
         func.set_all(strip, (255, 0, 0))
-        time.sleep(bar["duration"]//2 - .07)
+        if bar["duration"]//2 > .07:
+            time.sleep(bar["duration"]//2 - .07)
+        else:
+            time.sleep(bar["duration"]//2)
         func.set_all(strip, (0, 255, 0))
-        time.sleep(bar["duration"]//2 - .07)
+        if bar["duration"] // 2 > .07:
+            time.sleep(bar["duration"] // 2 - .07)
+        else:
+            time.sleep(bar["duration"] // 2)
     return
 
 

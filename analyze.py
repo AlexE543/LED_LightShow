@@ -84,10 +84,11 @@ def pulse_to_bars(bars):
 def piano_to_notes(segments):
     strip = neopixel.NeoPixel(board.D18, 144, brightness=0.3, auto_write=True)
     for segment in segments:
-        if abs(segment["loudness_max"]) - 4 > 0 and segment["duration"] > .3:
+        if abs(segment["loudness_max"]) - 4 > 0:
             func.piano(strip, (34, 23, 98), segment["pitches"].index(max(segment["pitches"])))
             print(segment["pitches"].index(max(segment["pitches"])))
-        time.sleep(segment["duration"])
+        if segment["duration"] > .15:
+            time.sleep(segment["duration"])
 
 if __name__ == "__main__":
     current_id = get_current_track_id()

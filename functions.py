@@ -6,7 +6,6 @@ strip = neopixel.NeoPixel(board.D18, 144, brightness=0.2, auto_write=False)
 def set_all(strip, color):
     strip.fill(color)
     strip.show()
-    print("Set All")
 
 # Wipes a color down the strand to fill it with that color
 def wipe(strip, color):

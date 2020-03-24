@@ -65,7 +65,8 @@ def start_song(bars):
 def pulse_to_bars(bars):
     strip = neopixel.NeoPixel(board.D18, 144, brightness=0.3, auto_write=False)
     print("Starting Song")
-    time.sleep(bars[0]["start"] - .2)
+    if bars[0]["start"] > .14:
+        time.sleep(bars[0]["start"] - .14)
     for bar in bars:
         func.set_all(strip, (255, 0, 0))
         time.sleep(bar["duration"] - .14)

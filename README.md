@@ -6,6 +6,6 @@ Instructions on how to set up and use coming soon...
 ### Features to add
 - [x] Piano Feature
 - [X] Pulse to Beat
-- [] Light show maker
-- [] Auto music detection
-- [] timing tweaks
+- [ ] Light show maker
+- [ ] Auto music detection
+- [ ] timing tweaks
